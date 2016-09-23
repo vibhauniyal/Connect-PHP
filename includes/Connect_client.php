@@ -3,14 +3,15 @@ require('includes/lib/OAuth2/Client.php');
 require('includes/lib/OAuth2/GrantType/IGrantType.php');
 require('includes/lib/OAuth2/GrantType/AuthorizationCode.php');
 
-const CLIENT_ID     = '5d8a9e86-3702-4f4d-a727-f58d23eb33de';
-const CLIENT_SECRET = 'testpass';
-const CLIENT_TOKEN = '32zDIHeOPeVunekZ';
+const CLIENT_ID     = 'CLIENT ID';
+const CLIENT_SECRET = 'CLIENT SECRET';
+const CLIENT_TOKEN  = 'CLIENT TOKEN';
 
-const REDIRECT_URI           = 'http://localhost/sandeep/merchant/Auth.php';
-const AUTHORIZATION_ENDPOINT = 'http://localhost/sandeep/oauth2/index.php/account/authorize';
-const TOKEN_ENDPOINT         = 'http://localhost/sandeep/oauth2/index.php/account/token';
-const RESOURCE_URL           = 'http://localhost/sandeep/oauth2/index.php/account/resource';
+const REDIRECT_URI           = 'MERCHANT CALLBACK URL';   // Merchant Auth callback URL
+
+const AUTHORIZATION_ENDPOINT = 'AUTHORIZE URI';    // CSC Connect authorization URL
+const TOKEN_ENDPOINT         = 'TOKEN URI';  // CSC Connect Token endpoint
+const RESOURCE_URL           = 'USER URI';  // // CSC Connect Useer Resource endpoint
 
 class Oauth_client{
 	private $_client;
