@@ -9,9 +9,10 @@ const CLIENT_TOKEN  = 'CLIENT TOKEN';
 
 const REDIRECT_URI           = 'MERCHANT CALLBACK URL';   // Merchant Auth callback URL
 
-const AUTHORIZATION_ENDPOINT = 'AUTHORIZE URI';    // CSC Connect authorization URL
-const TOKEN_ENDPOINT         = 'TOKEN URI';  // CSC Connect Token endpoint
-const RESOURCE_URL           = 'USER URI';  // // CSC Connect Useer Resource endpoint
+const CONNECT_SERVER 	= 'http://connect.csccloud.in';   // CSC Connect URL
+const AUTHORIZATION_ENDPOINT = CONNECT_SERVER .'/account/authorize';    // CSC Connect authorization URL
+const TOKEN_ENDPOINT         = CONNECT_SERVER .'/account/token';  // CSC Connect Token endpoint
+const RESOURCE_URL           = CONNECT_SERVER .'/account/resource';  // // CSC Connect Useer Resource endpoint
 
 class Oauth_client{
 	private $_client;
